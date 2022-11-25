@@ -1,0 +1,17 @@
+.banner{ 
+    background-image: url(/banner.jpg); 
+    height: 500px; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    top: 0;
+
+}
+
+.perfil{
+    width: 150px;
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 100px;
+}
