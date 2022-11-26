@@ -15,3 +15,9 @@
     margin-top: 430px;
     margin-left: 100px;
 }
+
+.titulo{
+    text-shadow: 2px 1px #3e3c34; 
+    color: #bb8f31;
+    font-style: italic;
+}
