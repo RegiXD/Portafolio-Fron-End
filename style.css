@@ -22,43 +22,186 @@
     font-style: italic;
 }
 
-.progreso {
+.progreso{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: transparent;
-    border-top: 5px solid rgb(34, 139, 74);
-    border-right: 5px solid rgb(34, 139, 74);
-    border-bottom: 5px solid rgba(87, 136, 106, 0.323);
-    border-left: 5px solid rgb(34, 139, 74);
+    border: 10px;
     animation-iteration-count: 1;
     animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.html {
+    border-top: 10px solid rgb(34, 139, 74);
+    border-right: 20px solid rgb(34, 139, 74);
+    border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+    border-left: 10px solid rgb(34, 139, 74);
+    animation-name: html;
+    animation-duration: 4s;
+}
+
+.css {
+    border-top: 10px solid rgb(34, 139, 74);
+    border-right: 20px solid rgb(34, 139, 74);
+    border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+    border-left: 10px solid rgb(34, 139, 74);
+    animation-name: css;
+    animation-duration: 4s;
+}
+
+.js {
+    border-top: 10px solid rgb(34, 139, 74);
+    border-right: 20px solid rgba(87, 136, 106, 0.323);
+    border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+    border-left: 10px solid rgb(34, 139, 74);
+    animation-name: js;
     animation-duration: 3s;
-    animation-name: spinner-loading
- }
-@keyframes spinner-loading{
+}
+
+.angular {
+    border-top: 10px solid rgba(87, 136, 106, 0.323);
+    border-right: 20px solid rgba(87, 136, 106, 0.323);
+    border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+    border-left: 10px solid rgba(87, 136, 106, 0.323);
+}
+
+.bootstrap {
+    border-top: 10px solid rgb(34, 139, 74);
+    border-right: 20px solid rgb(34, 139, 74);
+    border-bottom: 20px solid rgb(34, 139, 74);
+    border-left: 10px solid rgb(34, 139, 74);
+    animation-name: bts;
+    animation-duration: 5s;
+}
+
+.ingles {
+    border-top: 10px solid rgba(87, 136, 106, 0.323);
+    border-right: 20px solid rgba(87, 136, 106, 0.323);
+    border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+    border-left: 10px solid rgb(34, 139, 74);
+    animation-name: ingles;
+    animation-duration: 2s;
+}
+
+@keyframes html{
     0% {
-        border-top: 5px solid rgba(87, 136, 106, 0.323);
-        border-right: 5px solid rgba(87, 136, 106, 0.323);
-        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
-        border-left: 5px solid rgba(87, 136, 106, 0.323);
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgba(87, 136, 106, 0.323);
     } 
-    50% {
-        border-top: 5px solid rgba(87, 136, 106, 0.323);
-        border-right: 5px solid rgba(87, 136, 106, 0.323);
-        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
-        border-left: 5px solid rgb(34, 139, 74);
+    25% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
     } 
-    75%{
-        border-top: 5px solid rgb(34, 139, 74);
-        border-right: 5px solid rgba(87, 136, 106, 0.323);
-        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
-        border-left: 5px solid rgb(34, 139, 74);
+    50%{
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
     }
     to {
-        border-top: 5px solid rgb(34, 139, 74);
-        border-right: 5px solid rgb(34, 139, 74);
-        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
-        border-left: 5px solid rgb(34, 139, 74);
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgb(34, 139, 74);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+}
+
+@keyframes css{
+    0% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgba(87, 136, 106, 0.323);
+    } 
+    25% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    } 
+    50%{
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+    to {
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgb(34, 139, 74);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+}
+
+@keyframes js{
+    0% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgba(87, 136, 106, 0.323);
+    } 
+    50% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+    to {
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+}
+
+@keyframes bts{
+    0% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgba(87, 136, 106, 0.323);
+    } 
+    25% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    } 
+    50%{
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+    75%{
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgb(34, 139, 74);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+    to {
+        border-top: 10px solid rgb(34, 139, 74);
+        border-right: 20px solid rgb(34, 139, 74);
+        border-bottom: 20px solid rgb(34, 139, 74);
+        border-left: 10px solid rgb(34, 139, 74);
+    }
+}
+@keyframes ingles{
+    0% {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgba(87, 136, 106, 0.323);
+    } 
+    to {
+        border-top: 10px solid rgba(87, 136, 106, 0.323);
+        border-right: 20px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 20px solid rgba(87, 136, 106, 0.323);
+        border-left: 10px solid rgb(34, 139, 74);
     }
 }
