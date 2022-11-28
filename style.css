@@ -21,3 +21,44 @@
     color: #bb8f31;
     font-style: italic;
 }
+
+.progreso {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 5px solid rgb(34, 139, 74);
+    border-right: 5px solid rgb(34, 139, 74);
+    border-bottom: 5px solid rgba(87, 136, 106, 0.323);
+    border-left: 5px solid rgb(34, 139, 74);
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-name: spinner-loading
+ }
+@keyframes spinner-loading{
+    0% {
+        border-top: 5px solid rgba(87, 136, 106, 0.323);
+        border-right: 5px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
+        border-left: 5px solid rgba(87, 136, 106, 0.323);
+    } 
+    50% {
+        border-top: 5px solid rgba(87, 136, 106, 0.323);
+        border-right: 5px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
+        border-left: 5px solid rgb(34, 139, 74);
+    } 
+    75%{
+        border-top: 5px solid rgb(34, 139, 74);
+        border-right: 5px solid rgba(87, 136, 106, 0.323);
+        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
+        border-left: 5px solid rgb(34, 139, 74);
+    }
+    to {
+        border-top: 5px solid rgb(34, 139, 74);
+        border-right: 5px solid rgb(34, 139, 74);
+        border-bottom: 5px solid rgba(87, 136, 106, 0.323);
+        border-left: 5px solid rgb(34, 139, 74);
+    }
+}
