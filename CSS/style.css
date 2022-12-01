@@ -1,3 +1,8 @@
+.header{
+    background-color:#31302a;
+    height: 80px;
+}
+
 .banner{ 
     background-image: url(/Imagenes/banner.jpg); 
     height: 500px; 

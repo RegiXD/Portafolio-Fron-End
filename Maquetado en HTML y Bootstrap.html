@@ -12,10 +12,10 @@
     <body>
         <div class="container bg-primary bg-opacity-25 rounded p-3">
             <!--Header con mi Logo, Título de Proyecto, los links a mis redes y botón de Edición de Info-->
-            <div class="header">
+            <div class="header rounded p-2">
                 <div class="row align-items-between"> 
                   <div class="col">
-                    <p class="titulo fs-3"><img src="/Imagenes/logo.jpg" class="rounded-circle m-1" style="width: 70px;"> "Argentina Programa" #YoProgramo</p>
+                    <p class="titulo fs-3"><img src="/Imagenes/logo.jpg" class="rounded-circle m-1 border border-dark border-4" style="width: 70px;"> "Argentina Programa" #YoProgramo</p>
                   </div>
                   <div class="col-3  align-self-center">
                     <button class="btn bi-instagram btn-link btn-sm" style="color: rgb(192, 104, 233)"></button>
@@ -23,23 +23,32 @@
                     <button class="btn bi-facebook btn-link btn-sm" style="color: rgb(82, 135, 233)"></button>
                     <button class="btn bi-whatsapp btn-link btn-sm" style="color: rgb(84, 206, 94)"></button>
                     <button class="btn bi-telegram btn-link btn-sm" style="color: rgb(104, 184, 233)"></button>
-                    <button class="btn btn-success btn-sm bi-person-fill"> Login</button>
+                    <button class="btn btn-success btn-sm bi-pencil-fill"> Editar</button>
                   </div>
                 </div>
             </div>
             <div class="infopersonal bg-light bg-opacity-50 rounded">
                 <!--Banner y Foto de mi Rostro-->
                 <div class="banner mt-3 rounded-top">
-                      <img src="/Imagenes/perfil.jpg" class="perfil rounded-circle border border-primary border-4 border-opacity-25">
+                    <div class="d-flex justify-content-end"><div class="btn btn-success bi-pencil-fill rounded-circle m-2" style="position: absolute"></div></div>
+                    <img src="/Imagenes/perfil.jpg" class="perfil rounded-circle border border-primary border-4 border-opacity-25">
+                    <div class="btn btn-success bi-pencil-fill rounded-circle" style="position: absolute; margin-top: 483px; margin-left: 153px;"></div>
                 </div>
                 <!--Información Personal-->
                 <div class="información row p-4 mb-5">
-                    <div class="titulo col-3 align-self-end justify-content-start ms-3">
+                    <div class="titulo col-3 align-self-center ms-3 mt-3">
+                        <div class="d-flex justify-content-end"><div class="btn btn-success bi-pencil-fill rounded-circle mt-2 me-4" style="position: absolute"></div></div>
                         <h3>Reitano</h3>
                         <h3>María Regina</h3>
                     </div>
                     <div class="col">
-                        <h2>Programadora Web</h2>
+                        <div class="d-flex justify-content-between">
+                            <h2>Programadora Web</h2>
+                            <div class="m-2">
+                                <div class="btn btn-success bi-pencil-fill rounded-circle"></div>
+                                <div class="btn btn-success bi-x-lg rounded-circle"></div>
+                            </div>
+                        </div>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ad expedita suscipit ex ab non sint iste vero repudiandae, assumenda provident quos, beatae accusamus cumque, dolore architecto voluptatum quisquam quis.
                         </p>
@@ -49,10 +58,16 @@
             <!--Experiencia-->
             <hr>
 
-            <h1 class="titulo text-center mb-4 mt-3">Experiencia</h1>
+            <h1 class="titulo text-center mb-1 mt-3">Experiencia</h1>
             <div class="experiencia p-2">
                 <div class="list-group">
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
+                        <div class="d-flex justify-content-end">
+                            <div style="position: absolute;">
+                                <div class="btn btn-success bi-pencil-fill rounded-circle" style="position: relative; bottom: 25px;"></div>
+                                <div class="btn btn-success bi-x-lg rounded-circle" style="position: relative; bottom: 25px;"></div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-2">
                                 <img class="rounded" src="/Imagenes/VineriaReitano.jpg" style="width:150px">
@@ -77,9 +92,15 @@
             <div class="experiencia p-2">
                 <div class="list-group">
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
+                        <div class="d-flex justify-content-end">
+                            <div style="position: absolute;">
+                                <div class="btn btn-success bi-pencil-fill rounded-circle" style="position: relative; bottom: 25px;"></div>
+                                <div class="btn btn-success bi-x-lg rounded-circle" style="position: relative; bottom: 25px;"></div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-2">
-                                <img class="rounded" src="/Imagenes/logo_del_curso.png" style="width:150px">
+                                <img class="rounded" src="/Imagenes/logo_del_curso.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
                                 <div class="d-flex justify-content-between">
@@ -92,9 +113,15 @@
                         </div>
                     </div>
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
+                        <div class="d-flex justify-content-end">
+                            <div style="position: absolute;">
+                                <div class="btn btn-success bi-pencil-fill rounded-circle" style="position: relative; bottom: 25px;"></div>
+                                <div class="btn btn-success bi-x-lg rounded-circle" style="position: relative; bottom: 25px;"></div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-2">
-                                <img class="rounded" src="/Imagenes/UNL.png" style="width:150px">
+                                <img class="rounded" src="/Imagenes/UNL.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
                                 <div class="d-flex justify-content-between">
@@ -102,14 +129,20 @@
                                   <small>hace 1 año</small>
                                 </div>
                                 <p class="mb-1">Ingeniería en Informática</p>
-                                <small>Hice primer año el cual promocioné y comencé el segundo en el cual dejé para dedicarme de lleno a la programación web</small>
+                                <small>Promosioné primer año, permitiéndome hacer el segundo en el cual dejé para dedicarme de lleno a la programación web</small>
                             </div>
                         </div>
                     </div>
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
+                        <div class="d-flex justify-content-end">
+                            <div style="position: absolute;">
+                                <div class="btn btn-success bi-pencil-fill rounded-circle" style="position: relative; bottom: 25px;"></div>
+                                <div class="btn btn-success bi-x-lg rounded-circle" style="position: relative; bottom: 25px;"></div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-2">
-                                <img class="rounded" src="/Imagenes/JuanXXIII.png" style="width:150px">
+                                <img class="rounded" src="/Imagenes/JuanXXIII.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
                                 <div class="d-flex justify-content-between">
