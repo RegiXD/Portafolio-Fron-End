@@ -10,23 +10,29 @@
         <link rel="stylesheet" href="/CSS/color.css">
     </head>
     <body>
-        <div id="login" class="d-none">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-header">Login</div>
-                    <div class="card-body">
+        <div class="modal fade" id="ModalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <div class="input-group flex-nowrap mb-3 mt-2">
                             <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            <input type="text" class="form-control" placeholder="Usuario" id="usuario">
                         </div>
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <label for="contrasenia" class="form-label">Contraseña</label> 
+                        <input type="password" class="form-control" id="contrasenia">
                     </div>
-                    <div class="card-footer bg-transparent text-end">
-                        <button class="btn btn-success">Ingresar</button>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" id="aceptar">Ingresar</button>
                     </div>
+                  </div>
                 </div>
-              </div>
+            </div>
         </div>
 
         <div class="container bg-primary bg-opacity-25 rounded p-3">
@@ -42,21 +48,21 @@
                     <button class="btn bi-facebook btn-link btn-sm" style="color: rgb(82, 135, 233)"></button>
                     <button class="btn bi-whatsapp btn-link btn-sm" style="color: rgb(84, 206, 94)"></button>
                     <button class="btn bi-telegram btn-link btn-sm" style="color: rgb(104, 184, 233)"></button>
-                    <button class="btn btn-success btn-sm bi-pencil-fill"> Editar</button>
+                    <button id="Login" class="btn btn-success btn-sm bi-pencil-fill" data-bs-toggle="modal" data-bs-target="#ModalLogin"> Editar</button>
                   </div>
                 </div>
             </div>
             <div class="infopersonal bg-light bg-opacity-50 rounded">
                 <!--Banner y Foto de mi Rostro-->
                 <div class="banner mt-3 rounded-top">
-                    <div class="d-flex justify-content-end"><div class="btn btn-success bi-pencil-fill rounded-circle m-2 d-none" style="position: absolute"></div></div>
+                    <div class="d-flex justify-content-end"><div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: absolute; margin: 10px;"></div></div>
                     <img src="/Imagenes/perfil.jpg" class="perfil rounded-circle border border-primary border-4 border-opacity-25">
-                    <div class="btn btn-success bi-pencil-fill rounded-circle d-none" style="position: absolute; margin-top: 483px; margin-left: 153px;"></div>
+                    <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: absolute; margin-top: 483px; margin-left: 153px;"></div>
                 </div>
                 <!--Información Personal-->
                 <div class="información row p-4 mb-5">
                     <div class="titulo col-3 align-self-center ms-3 mt-3">
-                        <div class="d-flex justify-content-end"><div class="btn btn-success bi-pencil-fill rounded-circle mt-2 me-4 d-none" style="position: absolute"></div></div>
+                        <div class="d-flex justify-content-end"><div class="editar btn btn-success bi-pencil-fill rounded-circle mt-2 me-4 d-none" style="position: absolute"></div></div>
                         <h3>Reitano</h3>
                         <h3>María Regina</h3>
                     </div>
@@ -64,8 +70,8 @@
                         <div class="d-flex justify-content-between">
                             <h2>Programadora Web</h2>
                             <div class="m-2">
-                                <div class="btn btn-success bi-pencil-fill rounded-circle d-none"></div>
-                                <div class="btn btn-success bi-x-lg rounded-circle d-none"></div>
+                                <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none"></div>
+                                <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none"></div>
                             </div>
                         </div>
                         <p>
@@ -83,8 +89,8 @@
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
                         <div class="d-flex justify-content-end">
                             <div style="position: absolute;">
-                                <div class="btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
-                                <div class="btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -113,8 +119,8 @@
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
                         <div class="d-flex justify-content-end">
                             <div style="position: absolute;">
-                                <div class="btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
-                                <div class="btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -134,8 +140,8 @@
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
                         <div class="d-flex justify-content-end">
                             <div style="position: absolute;">
-                                <div class="btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
-                                <div class="btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -155,8 +161,8 @@
                     <div class="list-group-item list-group-item-action bg-light bg-opacity-50" aria-current="true">
                         <div class="d-flex justify-content-end">
                             <div style="position: absolute;">
-                                <div class="btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
-                                <div class="btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
+                                <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none" style="position: relative; bottom: 25px;"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -264,5 +270,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="/Actions.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     </body>
 </html>

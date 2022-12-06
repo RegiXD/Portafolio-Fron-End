@@ -21,16 +21,6 @@
     margin-left: 100px;
 }
 
-#login{
-    z-index: 1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 311px;
-    height: 292px;
-}
-
 .titulo{
     text-shadow: 2px 1px #3e3c34; 
     color: #bb8f31;

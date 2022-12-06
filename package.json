@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "require": "^2.4.20"
   }
 }
