@@ -11,26 +11,26 @@
     </head>
     <body>
         <div class="modal fade" id="ModalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div id="Modal" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="input-group flex-nowrap mb-3 mt-2">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Usuario" id="usuario">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <label for="contrasenia" class="form-label">Contraseña</label> 
-                        <input type="password" class="form-control" id="contrasenia">
+                        <div class="modal-body">
+                            <div class="input-group flex-nowrap mb-3 mt-2">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Usuario" id="usuario">
+                            </div>
+                            <label for="contrasenia" class="form-label">Contraseña</label> 
+                            <input type="password" class="form-control" id="contrasenia">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="aceptar">Ingresar</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary" id="aceptar">Ingresar</button>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -68,14 +68,14 @@
                     </div>
                     <div class="col">
                         <div class="d-flex justify-content-between">
-                            <h2>Programadora Web</h2>
+                            <h2>Full Stack Developer Jr</h2>
                             <div class="m-2">
                                 <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none"></div>
                                 <div class="cerrar btn btn-success bi-x-lg rounded-circle d-none"></div>
                             </div>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ad expedita suscipit ex ab non sint iste vero repudiandae, assumenda provident quos, beatae accusamus cumque, dolore architecto voluptatum quisquam quis.
+                            En 2018, a mis 18 años, terminé la secundaria técnica con el segundo mejor promedio recibiendo el título de "Técnica en Electrónica". Al año siguiente comencé la facultad en la carrera de ingeniería en informática, año en el cual promocioné todas las materias sin mayores problemas. Terminé avandonando en 2021 por una decepción hacia sus administrativos y algunos profesores, pero sin dejar de buscar qué curso tomar para seguir con mi preparación como "Full Stack Developer". Finalmente en octubre de ese mismo año me inscribí en Argentina Programa comenzando por el módulo #SeProgramar en el cual quedé en los primeros 60 puestos entrando así en #YoProgramo.
                         </p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-auto">
                                 <img class="rounded" src="/Imagenes/VineriaReitano.jpg" style="width:150px">
                             </div>
                             <div class="col align-self-center">
@@ -124,7 +124,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-auto">
                                 <img class="rounded" src="/Imagenes/logo_del_curso.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-auto">
                                 <img class="rounded" src="/Imagenes/UNL.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-auto">
                                 <img class="rounded" src="/Imagenes/JuanXXIII.png" style="width:150px; height:150px;">
                             </div>
                             <div class="col align-self-center">
@@ -271,8 +271,8 @@
             </div>
         </div>
 
-        <script src="/Actions.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="/Actions.js"></script>
 
     </body>
 </html>

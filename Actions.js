@@ -9,15 +9,16 @@ fetch('/Usuario_Contraseña.json')
 const usuario=document.getElementById('usuario');
 const contrasenia=document.getElementById('contrasenia');
 const boton=document.getElementById('aceptar');
-const modal=document.getElementById('ModalLogin');
 const ediciones=document.getElementsByClassName('editar');
 const cerrar=document.getElementsByClassName('cerrar');
 const login_logout=document.getElementById('Login');
+const modal = new bootstrap.Modal(document.getElementById('ModalLogin'));
 
 boton.addEventListener('click', (e) => {
     if(usuario.value==verificacion.usuario && contrasenia.value==verificacion.contrasenia){
         usuario.value="";
         contrasenia.value="";
+        modal.toggle();
         login_logout.setAttribute("class", "Salir btn btn-danger btn-sm bi-box-arrow-left");
         login_logout.removeAttribute("data-bs-toggle");
         login_logout.removeAttribute("data-bs-target");
