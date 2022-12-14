@@ -19,16 +19,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="input-group flex-nowrap mb-3 mt-2">
-                                <span class="input-group-text" id="addon-wrapping">@</span>
-                                <input type="text" class="form-control" placeholder="Usuario" id="usuario">
-                            </div>
-                            <label for="contrasenia" class="form-label">Contraseña</label> 
-                            <input type="password" class="form-control" id="contrasenia">
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="aceptar">Ingresar</button>
+                            <form id="form">
+                                <div class="input-group flex-nowrap mb-3 mt-2">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                    <input type="text" class="input form-control" placeholder="Usuario" id="usuario">
+                                </div>
+                                <label for="contrasenia" class="form-label">Contraseña</label> 
+                                <input type="password" class="input form-control" id="contrasenia">
+                                <hr>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button class="btn btn-primary" type="button" id="aceptar">Ingresar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
