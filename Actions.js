@@ -9,7 +9,7 @@ fetch('/Usuario_Contraseña.json')
 const usuario=document.getElementById('usuario');
 const contrasenia=document.getElementById('contrasenia');
 const boton=document.getElementById('aceptar');
-const ediciones=document.getElementsByClassName('editar');
+const ediciones=document.querySelectorAll('.editar')
 const cerrar=document.getElementsByClassName('cerrar');
 const login_logout=document.getElementById('Login');
 const modal = new bootstrap.Modal(document.getElementById('ModalLogin'));
@@ -35,7 +35,7 @@ document.addEventListener('keydown', (e) => {
             logearse();
         }
     }
-    else e.preventDefault();
+    else if(e.code==='Enter') e.preventDefault();
 })
 
 function logearse(e){
@@ -78,6 +78,25 @@ login_logout.addEventListener('click', (e) => {
     }
 })
 
-ediciones[0].addEventListener("click", (e) => {
-    
-})
+ediciones.forEach((btn, i) => {
+    btn.addEventListener('click', (e) => {
+        cuandoSeHaceClick(i);
+    });
+});
+
+function cuandoSeHaceClick(i){
+    switch(i+1){
+        case 1:
+            console.log("boton banner");
+            break;
+        case 2:
+            console.log("boton perfil");
+            break;
+        case 3:
+            console.log("boton nombre/apellido");
+            break;
+        case 4:
+            console.log("boton biografia");
+            break;
+    }
+}
