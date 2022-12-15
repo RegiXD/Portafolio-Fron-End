@@ -29,7 +29,6 @@ boton.addEventListener('click', (e) => {
 })
 
 document.addEventListener('keydown', (e) => {
-    console.log(modal._isShown);
     if(modal._isShown){
         if(e.code==='Enter'){
             logearse();
