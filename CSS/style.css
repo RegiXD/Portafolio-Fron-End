@@ -27,6 +27,38 @@
     font-style: italic;
 }
 
+.editararch {
+    position: relative;
+    display: inline-block;
+}
+  
+.editararch::before {
+    background-color: #198754;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 42px;
+    height: 38px;
+}
+  
+.editararch input[type="file"] {
+    opacity: 0;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+  
+.src-file::before {
+    content: '';
+}
+
 .progreso{
     width: 150px;
     height: 150px;
