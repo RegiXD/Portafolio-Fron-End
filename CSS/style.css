@@ -3,8 +3,7 @@
     height: 80px;
 }
 
-.banner{ 
-    background-image: url(/Imagenes/banner.jpg); 
+#banner{ 
     height: 500px; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -13,12 +12,21 @@
     top: 0;
 
 }
-
 .perfil{
     width: 155px;
+    height: 155px;
     position: absolute;
     margin-top: 420px;
     margin-left: 100px;
+}
+
+#img{
+    width: 148px;
+    height: 148px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%;
 }
 
 .titulo{

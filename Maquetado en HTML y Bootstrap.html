@@ -37,11 +37,15 @@
         </div>
 
         <div class="container bg-primary bg-opacity-25 rounded p-3">
+
             <!--Header con mi Logo, Título de Proyecto, los links a mis redes y botón de Edición de Info-->
+
             <div class="header rounded p-2">
                 <div class="row align-items-between"> 
                   <div class="col">
-                    <p class="titulo fs-3"><img src="/Imagenes/logo.jpg" class="rounded-circle m-1 border border-dark border-4" style="width: 70px;"> "Argentina Programa" #YoProgramo</p>
+                    <p class="titulo fs-3">
+                        <img src="/Imagenes/logo.jpg" class="rounded-circle m-1 border border-dark border-4" style="width: 70px;"> "Argentina Programa" #YoProgramo
+                    </p>
                   </div>
                   <div class="col-3  align-self-center">
                     <button class="btn bi-instagram btn-link btn-sm" style="color: rgb(192, 104, 233)"></button>
@@ -54,19 +58,25 @@
                 </div>
             </div>
             <div class="infopersonal bg-light bg-opacity-50 rounded">
+
                 <!--Banner y Foto de mi Rostro-->
-                <div class="banner mt-3 rounded-top">
+
+                <div id="banner" class="mt-3 rounded-top" style="background-image: url(/Imagenes/banner.jpg);">
                     <div class="d-flex justify-content-end">
                         <div class="btn src-file editararch bi-pencil-fill d-none" style="position:absolute; margin: 10px;">
                             <input class="editarch" type="file" aria-label="Archivo" accept="image/*">
                         </div>
                     </div>
-                    <img src="/Imagenes/perfil.jpg" class="perfil rounded-circle border border-primary border-4 border-opacity-25">
+                    <div class="perfil rounded-circle border border-primary border-4 border-opacity-50">
+                        <div id="img" style="background-image: url(/Imagenes/perfil.jpg);"></div>
+                    </div>
                     <div class="btn src-file editararch bi-pencil-fill d-none" style="position: absolute; margin-top: 480px; margin-left: 153px;">
                         <input class="editarch" type="file" aria-label="Archivo" accept="image/*">
                     </div>
                 </div>
+
                 <!--Información Personal-->
+
                 <div class="información row p-4 mb-5">
                     <div class="col-3 align-self-center ms-3 mt-3">
                         <div class="d-flex justify-content-end">
@@ -87,7 +97,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <h2 id="tituloDesarrollo">Full Stack Developer Jr</h2>
+                        <h2 id="tituloDes">Full Stack Developer Jr</h2>
                         <div class="d-flex justify-content-end">
                             <div style="position: absolute;">
                                 <div class="editar btn btn-success bi-pencil-fill rounded-circle d-none" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" style="position: relative; bottom: 40px;"></div>
@@ -97,11 +107,11 @@
                         <div class="collapse collapse-horizontal" id="collapse2">
                             <div class="card card-body bg-primary bg-opacity-10" style="width: 907px">
                                 <label for="exampleFormControlTextarea1" class="form-label">Editar</label>
-                                <input class="form-control mb-2" type="text" placeholder="Título">
-                                <textarea class="form-control" placeholder="Biografía..."></textarea>
+                                <input id="tituloDesarrollo" class="form-control mb-2" type="text" placeholder="Título">
+                                <textarea id="biografia" class="form-control" placeholder="Biografía..."></textarea>
                             </div>
                         </div>
-                        <p id="biografia">
+                        <p id="Biografia">
                             En 2018, a mis 18 años, terminé la secundaria técnica con el segundo mejor promedio recibiendo el título de "Técnica en Electrónica". Al año siguiente comencé la facultad en la carrera de ingeniería en informática, año en el cual promocioné todas las materias sin mayores problemas. Terminé avandonando en 2021 por una decepción hacia sus administrativos y algunos profesores, pero sin dejar de buscar qué curso tomar para seguir con mi preparación como "Full Stack Developer". Finalmente en octubre de ese mismo año me inscribí en Argentina Programa comenzando por el módulo #SeProgramar en el cual quedé en los primeros 60 puestos entrando así en #YoProgramo.
                         </p>
                     </div>

@@ -41,6 +41,23 @@ document.addEventListener('keydown', (e) => {
     else if(e.code==='Enter') e.preventDefault();
 })
 
+function readImage(file, img) {
+    if (file.type && !file.type.startsWith('image/')) {
+      console.log('File is not an image.', file.type, file);
+      return;
+    }
+  
+    const reader = new FileReader();
+    reader.addEventListener('load', (event) => {
+        file.src = event.target.result;
+        if(img=="banner")
+            document.getElementById("banner").setAttribute("style", "background-image: url("+ file.src +")");
+        else if(img=="perfil")
+            document.getElementById("img").setAttribute("style", "background-image: url("+ file.src +")");
+    });
+    reader.readAsDataURL(file);
+  }
+
 function logearse(e){
     if(usuario.value==verificacion.usuario && contrasenia.value==verificacion.contrasenia){
         usuario.value="";
@@ -97,43 +114,60 @@ editarch.forEach((btn, i) => {
     });
 });
 
+function Borrar(id1, id2){
+    console.log("borra lo que vas a editar");
+    document.getElementById(id1).innerHTML="";
+    document.getElementById(id2).innerHTML="";
+}
+
+function Control(ap, nom, id1, id2, id3, id4){
+    if(document.getElementById(id3).value==="" || document.getElementById(id4).value===""){
+        console.log("coloca los valores que estaban" + ap + nom);
+        document.getElementById(id1).innerHTML=ap;
+        document.getElementById(id2).innerHTML=nom;
+    } 
+    else{
+        document.getElementById(id1).innerHTML = document.getElementById(id3).value;
+        document.getElementById(id2).innerHTML = document.getElementById(id4).value;
+        console.log("coloca nuevos valores");
+    }
+}
+
 function cuandoSeHaceClick(i, arch){
     if(!arch) i+=3;
     else i+=1;
     switch(i){
         case 1:
             console.log("boton banner");
+            edicionesarch[0].addEventListener('change', (e) => {
+                let file=e.target.files[0];
+                readImage(file, "banner");
+            })
             break;
         case 2:
             console.log("boton perfil");
+            edicionesarch[1].addEventListener('change', (e) => {
+                let file=e.target.files[0];
+                readImage(file, "perfil");
+            })
             break;
         case 3:
             let ap, nom;
             ap=document.getElementById('Apellido').innerHTML;
             nom=document.getElementById('Nombre').innerHTML;
-            collapseElementList[0].addEventListener('shown.bs.collapse', function() {
-                console.log("borra lo que vas a editar");
-                document.getElementById('Apellido').innerHTML="";
-                document.getElementById('Nombre').innerHTML="";
-            })
-
-            collapseElementList[0].addEventListener('hide.bs.collapse', function() {
-                if(document.getElementById('apellido').value==="" || document.getElementById('nombre').value===""){
-                    console.log("coloca los valores que estaban" + ap + nom);
-                    document.getElementById('Apellido').innerHTML=ap;
-                    document.getElementById('Nombre').innerHTML=nom;
-                } 
-                else{
-                    document.getElementById('Apellido').innerHTML = document.getElementById('apellido').value;
-                    document.getElementById('Nombre').innerHTML = document.getElementById('nombre').value;
-                    console.log("coloca nuevos valores");
-                }
-              })
-              document.getElementById('apellido').value="";
-              document.getElementById('nombre').value="";
+            collapseElementList[0].addEventListener('shown.bs.collapse', ()=> {Borrar('Apellido', 'Nombre')}, {once: true});
+            collapseElementList[0].addEventListener('hide.bs.collapse', ()=> {Control(ap, nom, 'Apellido', 'Nombre', 'apellido', 'nombre')}, {once: true});
+            document.getElementById('apellido').value="";
+            document.getElementById('nombre').value="";
             break;
         case 4:
-            console.log("boton biografia");
+            let tit, bio;
+            tit=document.getElementById('tituloDes').innerHTML;
+            bio=document.getElementById('Biografia').innerHTML;
+            collapseElementList[1].addEventListener('shown.bs.collapse', ()=> {Borrar('tituloDes', 'Biografia')}, {once: true});
+            collapseElementList[1].addEventListener('hide.bs.collapse', ()=> {Control(tit, bio, 'tituloDes', 'Biografia', 'tituloDesarrollo', 'biografia')}, {once: true});
+            document.getElementById('tituloDesarrollo').value="";
+            console.log(document.getElementById('biografia').value="");
             break;
     }
 }
